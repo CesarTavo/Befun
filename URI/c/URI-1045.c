@@ -14,8 +14,26 @@
  */
 
 int main(){
-	double A, B, C;
+	double A, B, C, TEMPORAL;
 	scanf("%lf %lf %lf", &A, &B, &C);
+
+	if(A < B){
+	TEMPORAL = A;
+	A = B;
+	B = TEMPORAL;
+	}
+	if(B < C){
+	TEMPORAL = B;
+	B = C;
+	C = TEMPORAL;
+	}
+	if(A < B){
+	TEMPORAL = A;
+	A = B;
+	B = TEMPORAL;
+	}
+
+//	printf("\n%lf %lf %lf\n", A, B, C);
 
 	if(A < 0 || B < 0 || C < 0){
 		return 0;
@@ -42,5 +60,3 @@ int main(){
 	} 
 	return 0;	
 }
-
-
