@@ -10,5 +10,21 @@
 */
 
 int main(){
-return 0;
+
+	double SALARY;
+
+	scanf("%lf", &SALARY);
+		
+	if(SALARY >= 0 && SALARY <= 400){
+		printf("Novo salario: %.2lf\nReajuste ganho: %.2lf\nEm percentual: 15 %\n", SALARY = SALARY*1.15, SALARY*0.15);
+	}else if(SALARY <= 800){
+		printf("Novo salario: %.2lf\nReajuste ganho: %.2lf\nEm percentual: 12 %\n", SALARY = SALARY*1.12, SALARY*0.12);
+	}else if(SALARY <= 1200){
+		printf("Novo salario: %.2lf\nReajuste ganho: %.2lf\nEm percentual: 10 %\n", SALARY = SALARY*1.10, SALARY*0.10);
+	}else if(SALARY <= 2000){
+		printf("Novo salario: %.2lf\nReajuste ganho: %.2lf\nEm percentual: 7 %\n", SALARY = SALARY*1.07, SALARY*0.07);
+	}else if(SALARY > 2000){
+		printf("Novo salario: %.2lf\nReajuste ganho: %.2lf\nEm percentual: 4 %\n", SALARY = SALARY*1.04, SALARY*0.04);
+	}
+	return 0;
 }
