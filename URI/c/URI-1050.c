@@ -1,10 +1,11 @@
-#include <stdio>
+#include <stdio.h>
 
 /* Lea un número entero que corresponda al número de código de área para marcación telefónica.
  *  A continuación, imprima el destino de acuerdo con la siguiente tabla:
  * DDD	| Destination
- * 61 	| Salvador
- * 71	| Sao Paulo
+ * 61 	| Brasilia
+ * 71 	| Salvador
+ * 11	| Sao Paulo
  * 21	| Rio de Janeiro
  * 32	| Juiz de Fora
  * 19	| Campinas
@@ -17,5 +18,36 @@
  */
 
 int main(){
-	return 0;	
+	int CODE;
+
+	scanf("%d", &CODE);
+
+	switch(CODE){
+		case 61:
+			printf("Brasilia\n");
+			break;
+		case 71:
+			printf("Salvador\n");
+			break;
+		case 11:
+			printf("Sao Paulo\n");
+			break;
+		case 21:
+			printf("Rio de Janeiro\n");
+			break;
+		case 32:
+			printf("Juiz de Fora\n");
+			break;
+		case 19:
+			printf("Campinas\n");
+			break;
+		case 27:
+			printf("Vitoria\n");
+			break;
+		case 31:
+			printf("Belo Horizonte\n");
+			break;
+		default:
+			printf("DDD nao cadastrado\n");
+	}
 }
