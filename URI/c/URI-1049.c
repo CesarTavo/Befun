@@ -19,49 +19,44 @@ int main(){
 		str24[] = "anelideo",
 		str31[] = "carnivoro",
 		str32[] = "onivoro",
-		str33[] = "onivoro",
-		str34[] = "herviboro",
-		str35[] = "hematofago",
-		str36[] = "herviboro",
-		str37[] = "hematofago",
-		str38[] = "onivoro";
+		str34[] = "herbivoro",
+		str35[] = "hematofago";
 
 	scanf("%s", &str1);
-	scanf("%s", &str2);
+       	scanf("%s", &str2);
 	scanf("%s", &str3);
 
 	if(strcmp(str1, str11) == 0){
 		if(strcmp(str2, str21) == 0){
 			if(strcmp(str3, str31) == 0){
 				printf("aguia\n");
-				return 0;	
-			} 
+			}else if(strcmp(str3, str32) == 0){ 
 			printf("pomba\n");
-			return 0;			
-	} else if(strcmp(str2, str22) == 0){
-		if(strcmp(str3, str33) == 0){
-			printf("homem\n");
-			return 0;
-		} printf("vaca\n");
-		return 0;
+			}
 	}
-	} else if(strcmp(str1, str12) == 0){
+	if(strcmp(str2, str22) == 0){
+		if(strcmp(str3, str32) == 0){
+			printf("homem\n");
+		}else if(strcmp(str3, str34) == 0){
+		       	printf("vaca\n");
+		}
+	}
+	}
+	else if(strcmp(str1, str12) == 0){
 		if(strcmp(str2, str23) == 0){
 			if(strcmp(str3, str35) == 0){
 				printf("pulga\n");
-				return 0;
-			} 
+			}else if(strcmp(str3, str34) == 0){ 
 			printf("lagarta\n");
-			return 0;
-		}else if(strcmp(str2, str24) == 0){
-			if(strcmp(str3, str37) == 0){
-				printf("sanguessuga\n");
-				return 0;
 			}
-			printf("minhoca\n");
-			return 0;
 		}
-		return 0;
+	if(strcmp(str2, str24) == 0){
+		if(strcmp(str3, str35) == 0){
+			printf("sanguessuga\n");
+		}else if(strcmp(str3, str32) == 0){
+			printf("minhoca\n");
+		}
+	}
 	}
 	return 0;
 }
