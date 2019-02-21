@@ -50,4 +50,5 @@ int main(){
 		default:
 			printf("DDD nao cadastrado\n");
 	}
+	return 0;
 }
