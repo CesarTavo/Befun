@@ -18,7 +18,7 @@
  * considerando que si cualquier información es nula por ejemplo, 
  * el número 0 debe imprimirse en lugar de W, X, Y o Z:
  * 
- * W dia(s)
+ * W DAY(s)
  * X hora(s)
  * Y minuto(s)
  * Z segundo(s)
@@ -26,12 +26,11 @@
 
 int main(){
 	int STR_DAY, STR_HOUR, STR_MIN, STR_SEG, END_DAY, END_HOUR, END_MIN, END_SEG;
+	char DAY[4], DOT[2];
 
-	printf("Dia ");
-	scanf("%d", &STR_DAY);
-	printf("");
-	scanf("%d : %d : %d", &STR_HOUR, &STR_MIN, &STR_SEG);
-	scanf("Dia %d", &END_DAY);
-	scanf("%d : %d : %d", &END_HOUR, &END_MIN, &END_SEG);
+	scanf("%s%d", DAY, &STR_DAY);
+	scanf("%d%s%d%s%d", &STR_HOUR, DOT, &STR_MIN, DOT, &STR_SEG);
+	scanf("%s%d", DAY, &END_DAY);
+	scanf("%d%s%d%s%d", &END_HOUR, DOT, &END_MIN, DOT, &END_SEG);
 
 }
