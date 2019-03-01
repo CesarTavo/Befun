@@ -26,11 +26,29 @@
 
 int main(){
 	int STR_DAY, STR_HOUR, STR_MIN, STR_SEG, END_DAY, END_HOUR, END_MIN, END_SEG;
-	char DAY[4], DOT[2];
+	int TIME, DAY, HR, MIN, SEG;
+	char DAY_STR[4], DOT[2];
 
-	scanf("%s%d", DAY, &STR_DAY);
+	scanf("%s%d", DAY_STR, &STR_DAY);
 	scanf("%d%s%d%s%d", &STR_HOUR, DOT, &STR_MIN, DOT, &STR_SEG);
-	scanf("%s%d", DAY, &END_DAY);
+	scanf("%s%d", DAY_STR, &END_DAY);
 	scanf("%d%s%d%s%d", &END_HOUR, DOT, &END_MIN, DOT, &END_SEG);
 
+        SEG = 60 - STR_SEG + END_SEG;
+	MIN = 60 * (60 - STR_MIN - 1 + END_MIN);
+	HR = 3600 * (24 -1 - STR_HOUR + END_HOUR);
+	DAY = 86400 * (END_DAY - STR_DAY - 1);
+	TIME = SEG + MIN + HR + DAY;
+
+	DAY = TIME/86400;
+	HR = (TIME % 86400) / 3600;
+	MIN = (TIME % 3600) / 60;
+	SEG = TIME % 60;
+
+	printf("%d dia(s)\n", DAY);
+	printf("%d hora(s)\n", HR);
+	printf("%d minuto(s)\n", MIN);
+	printf("%d segundo(s)\n", SEG);
+
+	return 0;
 }
