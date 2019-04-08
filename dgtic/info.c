@@ -27,7 +27,8 @@ int main () {
 
 while ( fscanf(in_file,"%s", string) == 1)
                 {
-                        if((strstr(string, version10) != 0) || (strstr(string, version81) != 0) || (strstr(string, version7) != 0)) {//if match found
+                        if((strstr(string, version10) != 0) || (strstr(string, version81) != 0) || (strstr(string, version7) != 0)) {
+				//if match found
 				strcpy(gen_information, "msinfo32.exe /report reporte.txt");
 				system(gen_information);
 				num++;
@@ -42,12 +43,6 @@ while ( fscanf(in_file,"%s", string) == 1)
 		num = 0;          
                 fclose(in_file);
 
-
-//   if(strstr(version_general, version10) != NULL){
-//		printf("La version de su sistema es: Microsoft Windows %s", version10);
-//		return(0);
-//	}
-   
 // commands 
 // winmsd report path
 // msinfo32.exe report info.txt
