@@ -2,7 +2,7 @@
 
 ## Shadow
 
-Este reto trataba sobre descifrar acdenas en SHA512, basicamente teníamos una lista con los respectivos password's 'hasheados' con SHA512.
+Este reto trataba sobre descifrar cadenas en SHA512, basicamente teníamos una lista con los respectivos password's 'hasheados' con SHA512.
 
 
 ```bash
@@ -35,13 +35,17 @@ u:$6$0w3EeszD$bUDQorjCKku1sjtCWMQfJ3ZRmsC5N.LN7CQnjvyCbcq5wSD33x2t/TVXA6jnjtajv8
 underscore:$6$RVUCQJFr$fsKkPUT9Pp5QlsZblSLJ4yKkfBxNMWN0TS.q7ticuEr/HQFdEbyiwK5JmaKKS9UDFzUsY6mhe1knnRbwy7K0s/:17930:0:99999:7:::
 ```
 
-Hay que notar que los hashes empiezan con `$6` el cual es la función usada para SHA512. Por lo que para solucionarlo se tuvo que hacer un diccionario ya que el método realizado es el de sustitución y para cada usuario recurrir al diccionario.
+Hay que notar que los hashes empiezan con `$6$` el cual es la función usada para SHA512. 
+Por lo que para solucionarlo se tuvo que hacer un diccionario 
+ya que el método realizado para el cifrado es el de sustitución.
 
-Por otro lado teníamos esta cadena
+Por otro lado teníamos esta cadena:
 
 ```bash
 hajjzvajvzqyaqbendzvajvqauzarlapjzrkybjzenzuvczjvastlj
 ```
+
+Solución:
 
 ```python
 
