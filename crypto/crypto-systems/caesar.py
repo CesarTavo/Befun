@@ -1,5 +1,4 @@
-#we need the alphabet because we convert letters into numerical values to be able to use
-#mathematical operations (note we encrypt the spaces as well)
+#Run this with Python3
 ALPHABET = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 KEY = int(input("Llave a usar: "))
 
