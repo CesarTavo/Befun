@@ -163,6 +163,16 @@ with open('decoded-keystream', 'wb') as f:
     f.write(barr)
 ```
 
+**solved.py**
+```python
+from Crypto.Util.number import long_to_bytes
+from hashlib import sha256
+
+flag = 'flag{' + sha256(long_to_bytes(70989122156399) + long_to_bytes(181037482648735) + long_to_bytes(191532558614761)).hexdigest() + '}'
+
+print(flag)
+```
+
 ### Cosas a notar
 
 #### Vernam Cipher:
@@ -182,7 +192,7 @@ texto simple + clave = texto cifrado ⇒ texto cifrado + clave = texto simple
 Este proceso de aplicar la operación XOR al texto y la clave a menudo se denomina mezcla,
  y las máquinas de cifrado que utilizan el principio de Vernam, por lo tanto, se conocen como mezcladores.
 
-Este (video)[https://www.youtube.com/watch?v=8fhNPXus4-s&list=PLKXdxQAT3tCssgaWOy5vKXAR4WTPpRVYK&index=10]
+Este [video](https://www.youtube.com/watch?v=8fhNPXus4-s&list=PLKXdxQAT3tCssgaWOy5vKXAR4WTPpRVYK&index=10)
  me aclaró varias dudas:
 
 La idea general es esta:
