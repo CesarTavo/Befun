@@ -3,7 +3,7 @@
 ## zer0lfsr
 
 Este reto consiste en un cifrado de flujo usando una 
-(LFSR).[https://en.wikipedia.org/wiki/Linear-feedback_shift_register]
+[LFSR.](https://en.wikipedia.org/wiki/Linear-feedback_shift_register)
 
 En computación un LFSR (*linear-feedback shift register*) es un un registro de desplazamiento 
 de una cascada de flip flops, que comparte el mismo reloj, en el que la salida de cada flip-flop
@@ -26,15 +26,15 @@ Un LFSR es un cryptosistema que lleva un criptoanálisis bastante fácil;
  Este LFSR puede luego alimentarse con el tramo interceptado del flujo de salida para
  recuperar el texto sin formato restante.
 
-Se emplean tres métodos generales para reducir este problema en cifrados de flujo basados ​​en LFSR:
+Se emplean tres métodos generales para reducir este problema en cifrados de flujo basados en LFSR:
 
 * Combinación no lineal de varios bits del estado LFSR;
 * Combinación no lineal de los bits de salida de dos o más LFSR (generador de contracción);
    o usar un algoritmo evolutivo para introducir la no linealidad.
 * Cronometraje irregular del LFSR, como en el generador de pasos alternos.
   
-Los cifrados de flujo importantes basados ​​en LFSR incluyen A5/1 y A5/2, usados ​​en teléfonos celulares GSM,
- E0, usados ​​en Bluetooth y el generador de contracción. 
+Los cifrados de flujo importantes basados en LFSR incluyen A5/1 y A5/2, usados en teléfonos celulares GSM,
+ E0, usados en Bluetooth y el generador de contracción. 
  El cifrado A5/2 se ha roto y tanto A5/1 como E0 tienen serias debilidades.
 
 El registro de desplazamiento de realimentación lineal (**LFSR**)
@@ -187,5 +187,5 @@ Este (video)[https://www.youtube.com/watch?v=8fhNPXus4-s&list=PLKXdxQAT3tCssgaWO
 
 La idea general es esta:
 
-!(verman-cipher01)[verman-cipher01.png]
-!(verman-cipher01)[verman-cipher02.png]
+![verman-cipher01](verman-cipher01.png)
+![verman-cipher02](verman-cipher02.png)
