@@ -14,7 +14,7 @@ en cada transición de la entrada del reloj.
 
 La forma más común de encontrar este tipo de algoritmo es con un XOR.
 
-###LFSR en cryptografía.
+### LFSR en cryptografía.
 
 Se usa para generar números pseudo-aleatorios para usarlos en su uso en cifrados de flujo
 
@@ -187,7 +187,7 @@ El texto cifrado se genera aplicando la operación lógica XOR (o-exclusivo) a l
  de texto simple y la secuencia clave. La ventaja de utilizar la operación XOR para esto, 
  es que se puede revertir, simplemente realizando la misma operación nuevamente. En otras palabras: 
 
-texto simple + clave = texto cifrado ⇒ texto cifrado + clave = texto simple
+texto simple + clave = texto cifrado $⇒$ texto cifrado + clave = texto simple
 
 Este proceso de aplicar la operación XOR al texto y la clave a menudo se denomina mezcla,
  y las máquinas de cifrado que utilizan el principio de Vernam, por lo tanto, se conocen como mezcladores.

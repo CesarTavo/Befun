@@ -34,6 +34,7 @@ def main():
     for key_value in range(256):
         message = single_char_xor(ciphertext, key_value)
         score = get_english_score(message)
+        print(key_value, message, score)
         data = {
             'message': message,
             'score': score,
