@@ -35,6 +35,6 @@ int  main() {
       printf("%d - %d\n",contador-1, fibonacci(contador));
       suma += par(fibonacci(contador));
    }
-      printf("Total: %d\n", suma );
+      printf("Sum of the even-valued terms: %d\n", suma );
    return 0;
 }
