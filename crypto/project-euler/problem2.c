@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /*
 Instructions:
@@ -38,3 +39,24 @@ int  main() {
       printf("Sum of the even-valued terms: %d\n", suma );
    return 0;
 }
+
+/*
+// This function is more efficent and fast
+
+int main()
+{
+int i=1,j=1,sum=0, x=1;
+    while(i<4000000)
+    {
+    i=j+i;
+    j=i-j;
+    printf("%d - %d\n", x,j);
+    if(i%2==0)
+    sum+=i;
+    x += 1;
+    }
+printf("Sum is: %d\n",sum);
+
+}
+*/
+
