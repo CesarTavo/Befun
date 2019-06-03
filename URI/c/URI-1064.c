@@ -20,9 +20,6 @@ int main(){
 
 	for(i=0; i<6; i++){
 		scanf("%f", &numeros[i]);
-	}
-
-	for(i=0; i<6; i++){
 		if(numeros[i]>=0){
 			suma += numeros[i];
 			average ++;
