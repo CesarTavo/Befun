@@ -9,7 +9,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 def multiple(valor, multiple1, multiple2):
     '''
-    Funtion to know if the num is a multiple or not
+    Function to know if the num is a multiple or not
     using module
     '''
     res1 = valor % multiple1
