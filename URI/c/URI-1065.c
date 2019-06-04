@@ -15,15 +15,15 @@
 
 int main(){
 	int numeros[4];
-	int i, average;
+	int i, values;
 
 	for(i=0; i<5; i++){
 		scanf("%d", &numeros[i]);
 		if(numeros[i] % 2 == 0){
-			average ++;
+			values ++;
 		}
 	}
 
-	printf("%d valores pares\n", average);
+	printf("%d valores pares\n", values);
 	return 0;
 }
