@@ -1,8 +1,9 @@
 '''
 10001st prime
-Al enumerar los primeros seis números primos: 2, 3, 5, 7, 11 y 13, podemos ver que el sexto primo es 13.
+Al enumerar los primeros seis numeros primos: 2, 3, 5, 7, 11 y 13, 
+podemos ver que el sexto primo es 13.
 
-¿Cuál es el número primo 10 001st?
+Cual es el numero primo 10001st?
 '''
 
 import math
@@ -15,16 +16,21 @@ def isprime(num):
         return False
     elif (num == 2):
         return True
-    else: 
+    elif(num > 2 and num <= 10000): 
         for x in range(2,num):
             if (num % x == 0):
+                return False
+        return True
+    else:
+        for x in range(2,int(math.sqrt(num))+1):
+            while num%x == 0:
                 return False
         return True
 
 if __name__ == "__main__":
     numbers = []
-    for i in range(10000,100000):
+    for i in range(1,1000000):
         if(isprime(i)):
             numbers.append(i)
-    print numbers[400], len(numbers)
+    print numbers[10000]
 
