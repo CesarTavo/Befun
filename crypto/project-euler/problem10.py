@@ -1,4 +1,23 @@
 '''
+Summation of primes
+
+Problem 10
+The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+
+Find the sum of all the primes below two million.
+'''
+
+'''
+Summation of primes
+
+Problem 10
+The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+
+Find the sum of all the primes below two million.
+'''
+
+
+'''
 10001st prime
 Al enumerar los primeros seis numeros primos: 2, 3, 5, 7, 11 y 13, 
 podemos ver que el sexto primo es 13.
@@ -29,8 +48,10 @@ def isprime(num):
 
 if __name__ == "__main__":
     numbers = []
-    for i in range(1,1000000):
+    c = 0
+    for i in range(1,2000000):
         if(isprime(i)):
             numbers.append(i)
-    print numbers[10000]
+            c += i
+    print numbers,c
 
