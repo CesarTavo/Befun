@@ -21,33 +21,21 @@ int main(){
 	for(i=0;i<cases;i++){
 		scanf("%d %d", &num1, &num2);
 		if(num2>num1){
-			if(num1%2==0){
-				num1=num1+1;
-				for(num1;num1<num2;num1=num1+2){
-					sum += num1;
+			num1+=1;
+			for(num1;num1<num2;num1++){
+				if(num1%2==1 || num1%2==-1){
+					sum+=num1;
 				}
-				printf("%d\n", sum);
-			}else{
-				num1=num1+2;
-				for(num1;num1<num2;num1=num1+2){
-					sum += num1;
-				}
-				printf("%d\n", sum);
 			}
+			printf("%d\n", sum);
 		}else{
-			if(num2%2==0){
-				num2=num2+1;
-				for(num2;num2<num1;num2=num2+2){
-					sum += num2;
+			num2+=1;
+			for(num2;num2<num1;num2++){
+				if(num2%2==1 || num2%2==-1){
+					sum+=num2;
 				}
-				printf("%d\n", sum);
-			}else{
-				num2=num2+2;
-				for(num2;num2<num1;num2=num2+2){
-					sum += num2;
-				}
-				printf("%d\n", sum);
 			}
+			printf("%d\n", sum);
 		}
 		sum=0;
 	}
