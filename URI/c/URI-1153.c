@@ -10,8 +10,7 @@
  */
 
 int main(){
-	int num, i, fac;
-	fac=1;
+	int num, i, fac=1;
 	scanf("%d", &num);
 
 	for(i=1;i<=num;i++){
