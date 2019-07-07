@@ -18,16 +18,14 @@
  */
 
 int main(){
-	int arr[10], i, j, num;
+	int arr[10], i, num;
 
 	scanf("%d", &num);
-	arr[0]=num;
-	for(i=1;i<=9;i++){
-		arr[i]=2*arr[(i-1)];
+	for(i=0;i<=9;i++){
+		arr[i]=num;
+		printf("N[%d] = %d\n", i,num);
+		num*=2;
 	}
 
-	for(j=0;j<10;j++){	
-		printf("N[%d] = %d\n", j, arr[j]);
-	}
 	return 0;
 }
