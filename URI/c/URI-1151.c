@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Print the N fibonacci numbers
+
 int main(){
 	int num, i, x, y;
 
