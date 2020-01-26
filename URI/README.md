@@ -8,7 +8,7 @@
 
 `printf("GoodBye World");`
 
-'''c
+```c
 #include<stdio.h>
 int main()
 {
@@ -19,6 +19,13 @@ X=A+B;
 printf("X = %d\n", X);
 return 0;
 }
-'''
+```
+
+* Objeto 1
+* Objeto 2
+
+1. Nombre
+2. Apellido
+3. Dirección
 
 
