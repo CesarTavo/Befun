@@ -1,6 +1,6 @@
 ---
-title:Test
-author:CesarTavo
+title: Test
+author: CesarTavo
 date: today
 ---
 
